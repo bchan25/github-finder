@@ -15,7 +15,7 @@ class UserItem extends Component {
 
   render() {
     // Destructor state
-    const { login, avatar_url, html_url } = this.state;
+    const { login, avatar_url, html_url } = this.props.user;
 
     return (
       <div className='card text-center'>
