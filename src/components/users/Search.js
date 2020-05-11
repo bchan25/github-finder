@@ -6,7 +6,7 @@ const Search = ({ searchUsers, showClear, clearUsers, setAlert }) => {
   const [text, setText] = useState("");
   // Event state change
   const onChange = (e) => {
-    this.setText(e.target.value);
+    setText(e.target.value);
   };
 
   const onSubmit = (e) => {
@@ -14,7 +14,7 @@ const Search = ({ searchUsers, showClear, clearUsers, setAlert }) => {
     if (text === "") {
       setAlert("Please enter something", "light");
     } else {
-      searchUsers(this.state.text);
+      searchUsers(text);
       setText("");
     }
   };
